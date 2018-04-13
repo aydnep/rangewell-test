@@ -1,0 +1,105 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.Ideas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Idea {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, .3);
+}
+
+.Idea header {
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    background: darkslateblue;
+    color: #fff;
+}
+
+.Idea input:read-only {
+    background: rgba(0, 0, 0, 0);
+    border: 0;
+    outline: 0;
+    color: #fff;
+    cursor: default;
+}
+
+.Idea main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 5px;
+}
+
+.Idea textarea {
+    flex-grow: 1;
+    resize: none;
+}
+
+.Idea textarea:read-only {
+    background: rgba(0, 0, 0, 0);
+    border: 0;
+    outline: 0;
+    color: #999;
+    cursor: default;
+}
+
+.Idea footer {
+    padding: 5px 10px;
+    background: ghostwhite;
+    height: 25px;
+    border-radius: 0 0 10px 10px;
+}
+
+.Idea footer button {
+    display: none;
+    border: 0;
+    outline: 0;
+    background: rgba(0, 0, 0, 0);
+    line-height: 20px;
+    color: darkred;
+}
+
+.Idea footer svg {
+    height: 10px;
+    margin-right: 5px;
+    fill: darkred;
+}
+
+.Idea:hover footer button {
+    display: flex;
+    align-items: center;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
